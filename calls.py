@@ -1,9 +1,8 @@
 import requests
 import json
-from sorts import merge_sort_dict
 
-url = ("http://jservice.io/api/clues?offset=")
-offset = 0
+url = ("http://jservice.io/api/category?id=")
+id = 1
 data = []
 
 '''
@@ -14,19 +13,11 @@ bundle install.
 '''
 
 # Loop through pages of api and add to list of dicts
-while(offset < 300): #156709
+while(id < 14280): #14280 #156709
     # Make request to changing url / api link
-    response = requests.get(url + str(offset))
-    # Designate page as one increment of 100 clues
-    page = json.loads(response.text)
-    # Loop through list of dicts and add to our own
-    for i in range (0, len(page)):
-        data.append(page[i])
-    offset += 100
-
-# Sort our json list. Although highly inefficient 
-# upfront, it will make later json access easier
-merge_sort_dict(data)
+    response = requests.get(url + str(id))
+    data.append(json.loads(response.text))
+    id += 1
 
 # Create a file for our new list of dictionaries
 with open('clues.json', 'w') as f:
