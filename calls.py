@@ -13,7 +13,7 @@ bundle install.
 '''
 
 # Loop through pages of api and add to list of dicts
-while(id < 14280): #14280 #156709
+while(id < 14280): #14280 category is empty, signifying end
     # Make request to changing url / api link
     response = requests.get(url + str(id))
     data.append(json.loads(response.text))
