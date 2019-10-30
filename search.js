@@ -4,8 +4,8 @@ var clueContainer = document.getElementById("clue-info");
 btn.addEventListener("click", function(){
     var ourData;
     var ourRequest = new XMLHttpRequest();
-    var offset = 0;
-    ourRequest.open("GET","http://jservice.io/api/clues?=" + offset);
+    var id = 1;
+    ourRequest.open("GET","http://jservice.io/api/category?id=" + id);
     // Function to load text as json object
     ourRequest.onload = function() {
         ourData = JSON.parse(ourRequest.responseText);
@@ -17,9 +17,9 @@ btn.addEventListener("click", function(){
 
 // Function to write gathered data out to HTML
 function renderHTML(data){
-    var htmlString = "";
-    for (i = 0; i <data.length; i++){
-        htmlString += "<p>" + data[i]["question"] + " " + data[i]["answer"] + "</p>";
+    var htmlString = "<h1> Category: " + data["title"] + "</h1>";
+    for (i = 0; i < data["clues"].length; i++){
+        htmlString += "<p>" + data["clues"][i]["question"] + " " + data["clues"][i]["answer"] + "</p>";
     }
     clueContainer.insertAdjacentHTML("beforeend",htmlString);
 }
