@@ -27,8 +27,8 @@ html, body {
   }
 
   input {
-    height: 30px;
-    width: 500px;
+    height : 32px;
+    width: 70%;
   }
   
   button {
@@ -72,3 +72,5 @@ html, body {
     font-size: 14px;
     margin: 0;
   }
+  
+  
