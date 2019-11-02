@@ -1,4 +1,4 @@
-# jeopardy-capital-one
+# Jeopardy Capital One Challenge
 
 # My Approach
 
