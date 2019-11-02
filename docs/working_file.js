@@ -2,6 +2,7 @@ var btn = document.getElementById("btn");
 var clueContainer = document.getElementById("clue-info");
 
 btn.addEventListener("click", function(){
+    clueContainer.innerHTML = "";
     var found = 0;
     var htmlString = "";
     var search = document.getElementById("search").value;
