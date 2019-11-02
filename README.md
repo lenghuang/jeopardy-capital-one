@@ -1,5 +1,11 @@
 # jeopardy-capital-one
 
+# My Approach
+
+I utilized GitHub pages to host compressed versions of the jService Json data. Although I am still utilizing linear search, searching these compressed versions of data would allow me a quicker linear search time such that it becomes barely noticeable. The repository for these compressed versions can be found here: https://github.com/lenghuang/Capital_One_Data. With the compressed method, I retrieved the data to then output it into an HTML website. 
+
+# PROJECT PROMPT:
+
 (Copied from Mindsumo website)
 
 To complete this challenge, build a web application that:
