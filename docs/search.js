@@ -19,7 +19,7 @@ btn.addEventListener("click", function(){
     var search = input.value;
     // First call compressed dataset
     var compressed = new XMLHttpRequest();
-    compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/titles_new.json");
+    compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/comp.json");
     compressed.onload = function() { 
         // Search through compressed dataset
         if(safe_onload(compressed)){
