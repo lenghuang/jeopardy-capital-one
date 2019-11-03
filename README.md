@@ -2,6 +2,8 @@
 
 This is a search engine of Jeopardy questions (or answers...)! Input anything that you think may be remotely related to... to... I don't know, but to something, ranging from Cracker Barrel to Dancing in the Bible, you can find it. This search engine will take a potential category name, and search for matching categories with their questions and answers from the show Jeopardy.
 
+Deployed Website: https://lenghuang.github.io/jeopardy-capital-one/
+
 # My Approach
 
 I utilized GitHub pages to host compressed versions of the jService Json data. Although I am still utilizing linear search, searching these compressed versions of data would allow me a quicker linear search time such that it becomes barely noticeable. The repository for these compressed versions can be found here: https://github.com/lenghuang/Capital_One_Data. With the compressed method, I retrieved the data to then output it into an HTML website. 
