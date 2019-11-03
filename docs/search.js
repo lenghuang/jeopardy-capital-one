@@ -1,5 +1,4 @@
 var clueContainer = document.getElementById("clue-info");
-
 var input = document.getElementById("search");
 input.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
@@ -169,7 +168,7 @@ function categoryHTML(data, htmlString){
 function getCategory(id, htmlString){
     // if title matches, call the api link of that id
     var category = new XMLHttpRequest();
-    category.open("GET", "http://jservice.io/api/category?id=" + id);
+    category.open("GET", "https://cors-anywhere.herokuapp.com/http://jservice.io/api/category?id=" + id);
     category.onload = function() {
         if(safeLoad(category)){
             var category_print = JSON.parse(category.responseText);
@@ -180,7 +179,7 @@ function getCategory(id, htmlString){
 }
 function getClue(id, offset, htmlString, param){
     var cluePage= new XMLHttpRequest();
-    cluePage.open("GET", "http://jservice.io/api/clues?offset=" + (offset));
+    cluePage.open("GET", "https://cors-anywhere.herokuapp.com/http://jservice.io/api/clues?offset=" + (offset));
     cluePage.onload = function() {
         if(safeLoad(cluePage)){
             var clues = JSON.parse(cluePage.responseText);
