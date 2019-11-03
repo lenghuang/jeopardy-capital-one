@@ -1,4 +1,3 @@
-//var btnOne = document.getElementById("btnOne");
 var clueContainer = document.getElementById("clue-info");
 
 var input = document.getElementById("search");
