@@ -56,7 +56,7 @@ function safe_onload(xhr){
 function get_category(id, htmlString){
     // if title matches, call the api link of that id
     var category = new XMLHttpRequest();
-    category.open("GET", "http://jservice.io/api/category?id=" + id);
+    category.open("GET", "https://cors-anywhere.herokuapp.com/http://jservice.io/api/category?id=" + id);
     category.onload = function() {
         if(safe_onload(category)){
             var category_print = JSON.parse(category.responseText);
