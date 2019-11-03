@@ -1,6 +1,6 @@
 # Jeopardy Capital One Challenge
 
-This is a search engine of Jeopardy questions (or answers...)! Input anything that you think may be remotely related to... to... I don't know, but to something, ranging from Cracker Barrel to Dancing in the Bible, you can find it. This search engine will take a potential category name, and search for matching categories with their questions and answers from the show Jeopardy.
+This is a search engine of Jeopardy questions (or answers...)! Input anything that you think may be remotely related to... to... I don't know, but to something, ranging from Cracker Barrel to Dancing in the Bible, you can find it. This search engine will take a potential category name, question, answer, or airdate, and search for matching categories with their questions and answers from the show Jeopardy.
 
 Deployed Website: https://lenghuang.github.io/jeopardy-capital-one/
 
