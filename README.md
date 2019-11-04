@@ -10,12 +10,6 @@ I utilized GitHub pages to host compressed versions of the jService Json data. A
 
 The biggest challenge for me was learning everything because this was the first time I've ever made a web app and the first time I've used JavaScript. Although I didn't have time for this challenge, I look forward to adding new features and building upon this in my own time.
 
-# Demo
-![Category Search](demo/category_demo.gif)
-![Answer Search](demo/answer_demo.gif)
-![Question Search](demo/question_demo.gif)
-![Date Search](demo/date_demo.gif)
-
 # Challenge Prompt
 
 (Copied from Mindsumo website)
@@ -40,3 +34,15 @@ Submissions will be graded on the following criteria:
 Meets Deliverables
 Creativity/Aesthetics (UI/UX)
 Clarity & Code Quality
+
+# Category Demo
+![Category Search](demo/category_demo.gif)
+
+# Answer Demo
+![Answer Search](demo/answer_demo.gif)
+
+# Question Demo
+![Question Search](demo/question_demo.gif)
+
+# Date Demo
+![Date Search](demo/date_demo.gif)
