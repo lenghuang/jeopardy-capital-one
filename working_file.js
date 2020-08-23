@@ -1,4 +1,7 @@
-//var btnOne = document.getElementById("btnOne");
+// const domain = "https://lenghuang.github.io"
+const domain = "https://lenhuang.me"
+
+
 var clueContainer = document.getElementById("clue-info");
 
 var input = document.getElementById("search");
@@ -19,7 +22,7 @@ btnOne.addEventListener("click", function(){
     // Prevent case where 0 input is in everything
     if(search.length != 0){
         var compressed = new XMLHttpRequest();
-        compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/comp.json");
+        compressed.open("GET", domain + "/Capital_One_Data/comp.json");
         compressed.onload = function() { 
             // Search through compressed dataset
             if(safeLoad(compressed)){
@@ -47,7 +50,7 @@ btnTwo.addEventListener("click", function(){
     // Prevent case where 0 input is in everything
     if(search.length != 0){
         var compressed = new XMLHttpRequest();
-        compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/answer.json");
+        compressed.open("GET", domain + "/Capital_One_Data/answer.json");
         compressed.onload = function() { 
             // Search through compressed dataset
             if(safeLoad(compressed)){
@@ -75,7 +78,7 @@ btnThree.addEventListener("click", function(){
     // Prevent case where 0 input is in everything
     if(search.length != 0){
         var compressed = new XMLHttpRequest();
-        compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/question.json");
+        compressed.open("GET", domain + "/Capital_One_Data/question.json");
         compressed.onload = function() { 
             // Search through compressed dataset
             if(safeLoad(compressed)){
@@ -103,7 +106,7 @@ btnFour.addEventListener("click", function(){
     // Prevent case where 0 input is in everything
     if(search.length != 0){
         var compressed = new XMLHttpRequest();
-        compressed.open("GET","https://lenghuang.github.io/Capital_One_Data/dates.json");
+        compressed.open("GET", domain + "/Capital_One_Data/dates.json");
         compressed.onload = function() { 
             // Search through compressed dataset
             if(safeLoad(compressed)){
